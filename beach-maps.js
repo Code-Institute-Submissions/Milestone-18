@@ -23,9 +23,9 @@ function getData(cb) {
 var temperature
 var conditions
 
-getData(function(data) {
+getData(function (data) {
    conditions = data.weather[0].main;
-   temperature = data.main.temp -273.15;
+   temperature = data.main.temp - 273.15;
    temperature = Math.round(temperature);
    document.getElementById("data").innerHTML = `<h3>Current Weather</h3><table><tr><th>Conditions</th><th>Temperature</th></tr>
    <tr><td>${conditions}</td><td>${temperature}</td></tr></table>`
