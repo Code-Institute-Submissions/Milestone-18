@@ -276,7 +276,7 @@ function buildIWContent(place) {
 function getData(cb) {
    var xhr = new XMLHttpRequest();
 
-   xhr.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat=8&lon=90&APPID=30d97b87215b9e9e7b0c5a065f302d8d");
+   xhr.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat=3&lon=73&APPID=30d97b87215b9e9e7b0c5a065f302d8d");
    xhr.send();
 
    xhr.onreadystatechange = function () {
@@ -285,13 +285,3 @@ function getData(cb) {
       }
    };
 };
-var temperature
-var conditions
-
-getData(function (data) {
-   conditions = data.weather[0].main;
-   temperature = data.main.temp - 273.15;
-   temperature = Math.round(temperature);
-   document.getElementById("data").innerHTML = `<h5>Current Weather</h5><table><tr><th>Conditions</th><th>Temperature</th></tr>
-   <tr><td>${conditions}</td><td>${temperature}</td></tr></table>`
-});
