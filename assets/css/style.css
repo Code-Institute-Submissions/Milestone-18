@@ -1,5 +1,5 @@
 body {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Sen', sans-serif;
    background-color: #fafafa;
    padding: 0;
    }
@@ -22,14 +22,11 @@ h6, h4 {
    padding: 0 5%;
 }
 
-th {
-   padding-right: 5px;
+h6 {
+   font-weight: 700;
 }
 
-a {
-   color: black;
-   text-decoration: none;
-}
+
 
 /*-----------------------------------------Map-------*/
 
@@ -41,6 +38,11 @@ a {
 .map-wrapper {
    padding-top: 20px;
    padding-bottom: 20px;
+   padding-left: 3%;
+}
+
+.hotel-search {
+   padding-left: 5%;
 }
 
 /*------------------------------------Images----------*/
