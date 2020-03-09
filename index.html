@@ -35,119 +35,116 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
-				<h2>Patong Beach</h2>
+				<h2>Discover Your Ideal Holiday Here</h2>
 			</div>
 		</div>
 	</div>
 
-   <div class="container-fluid">
-      <div class="row">
-         <div class="col-12 hero-image"></div>
-      </div>
-   </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 hero-image"></div>
+		</div>
+	</div>
 
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				<p>The Patong beach is highly known for its long stretched coastline. The beach offers tourists with a
-					wide variety of activities including water sports activities, snorkelling, lying on the beach and
-					other fun. Patong is an ideal place for partying all night and roaming around the town. This place
-					doesn’t have much of historical essence as it is mostly known for late night parties and drinks. One
-					may get the real taste of Thailand tourism in Patong’s cuisine. People usually come in the winter
-					season as it has the best weather. Patong offers travellers to lie around the beaches and take Thai
-					massages and spas. So here is a glimpse of travel guide to Patong.
-
+				<p>Welcome to the ideal place to discover all the details about your next holiday. Whether you are looking for 
+            a relaxing trip to the beach, or you are after a weekend break to the city, we will be able to help you find it. 
+            On this page is a map for you to search for restaurants, hotels or anything you can think of all over the world! 
+            To get you started we have a list of potential destinations at a couple of price points, feel free to ignore all of 
+            these though.
 				</p>
 			</div>
 			<div class="col-md-6" id="data"></div>
 		</div>
 	</div>
 
-	<div class="container-fluid">
-		<div class="row map-wrapper">
-			<div class="col-md-6">
-            <h3>Map of Local Area</h3>
-				<div id="map"></div>
+	<div class="hotel-search">
+		<div id="findhotels">
+			Find hotels in:
+		</div>
+
+		<div id="locationField">
+			<input id="autocomplete" placeholder="Enter a city" type="text" />
+      </div>
+
+			<div id="controls">
+				<select id="country">
+          <option value="all">All</option>
+          <option value="au">Australia</option>
+          <option value="br">Brazil</option>
+          <option value="ca">Canada</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="mx">Mexico</option>
+          <option value="nz">New Zealand</option>
+          <option value="it">Italy</option>
+          <option value="za">South Africa</option>
+          <option value="es" selected>Spain</option>
+          <option value="pt">Portugal</option>
+          <option value="us">U.S.A.</option>
+          <option value="uk">United Kingdom</option>
+        </select>
 			</div>
 		</div>
-	</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div id="map"></div>
+				</div>
+				<div class="col-md-6">
+					<div id="listing">
+						<table id="resultsTable">
+							<tbody id="results"></tbody>
+						</table>
+					</div>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6">
-				<h3>Things to Do</h3>
-				<p>One of the most loved and frequently visited areas in Thailand, Patong Beach offers the tranquility
-					of the sea and the liveliness of shows, bars, markets and restaurants. With a lot of things
-					available for a tourist to engage in, Patong Beach is ideal for a groovy evening. Here are a few
-					things that one can do, while in Patong. </p>
-				<h6>Simon Cabaret Show:</h6>
-				<p>One of the biggest shows of Patong is the Simon cabaret show. It is a family-friendly show, and the
-					theatre is located towards Karon, and it features some of the best performances of singing, dancing,
-					comic shows, and others. </p>
-				<h6>Patong Beach Road:</h6>
-				<p>Tourists can check out the incredible surf centre situated on the Patong Beach Road. With the waves
-					replicating that of the ocean waves, it is a joy to learn surfing here. The environment is
-					completely safe and suitable for amateurs and experts alike. </p>
-				<h6>Flying Hanuman:</h6>
-				<p>Visitors should try Hanuman flying and get an aerial view of the tropical jungles of Patong. This
-					adventure sport gives the thrill of a trek and is completely eco-friendly. </p>
-				<h6>Phuket Wake Park:</h6>
-				<p>Phuket Wake Park, located near Kathu waterfall, is an exciting plae to be at. It gives the most fun
-					ride over the lakes, and tourists can experience wakeboarding over the large freshwater lake.</p>
-			</div>
-			<div class="col-md-6 d-none d-sm-block">
-				<p>Picture here</p>
+					<div style="display: none">
+						<div id="info-content">
+							<table>
+								<tr id="iw-url-row" class="iw_table_row">
+									<td id="iw-icon" class="iw_table_icon"></td>
+									<td id="iw-url"></td>
+								</tr>
+								<tr id="iw-address-row" class="iw_table_row">
+									<td class="iw_attribute_name">Address:</td>
+									<td id="iw-address"></td>
+								</tr>
+								<tr id="iw-phone-row" class="iw_table_row">
+									<td class="iw_attribute_name">Telephone:</td>
+									<td id="iw-phone"></td>
+								</tr>
+								<tr id="iw-rating-row" class="iw_table_row">
+									<td class="iw_attribute_name">Rating:</td>
+									<td id="iw-rating"></td>
+								</tr>
+								<tr id="iw-website-row" class="iw_table_row">
+									<td class="iw_attribute_name">Website:</td>
+									<td id="iw-website"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6 d-none d-lg-block">
-				<p>Picture here</p>
-			</div>
-			<div class="col-md-6">
-				<h3>What to Eat</h3>
-				<p>There are plenty of dishes available in Patong. Some of the delicious delicacies in Patong include
-					Tom Yum Goong, which is prepared by lemongrass and Thai chillies and other coastal ingredients. The
-					other popular dishes of Patong are Mee Hokkien noodles, Massaman Curry and Dim Sum. The Massaman
-					Curry is prepared with coconut milk, and the sourness of lime juice gives it a tangy taste. One of
-					the most common non-vegetarian dishes of Patong is Green Curry Chicken.</p>
-               <p>Please click <a href="https://www.tripadvisor.co.uk/Restaurants-g297930-Patong_Kathu_Phuket.html">here</a> to check out Tripadvisor for ratings of local restaurants</p>
-			</div>
-		</div>
-	</div>
+		
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6">
-				<h3>Where to Shop</h3>
-				<p>Patong has no shortage of shopping places. Tourists can go for big Shopping complexes like the
-					Jungceylon for buying branded goods. Then there is Banzaan market, which is a posh local market of
-					Patong for buying goods at reasonable prices. The Malin Plaza is best for buying souvenirs,
-					beachwear, luggage and bags. Paradise night market is good for those who want to buy things at a
-					cheaper price with the good quality, especially for goods like mobile covers, cushion and bed
-					covers, lamps and beachwear.</p>
-			</div>
-			<div class="col-md-6 d-none d-lg-block">
-				<p>Picture here</p>
-			</div>
-		</div>
-	</div>
-
-	<script src="assets/js/beach-maps.js"></script>
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAar1nvqBvJPWIS3G42xEWdCo7t7tsEfPY&libraries=places&callback=initMap">
-	</script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-	</script>
+		<script src="assets/js/beach-maps.js"></script>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAar1nvqBvJPWIS3G42xEWdCo7t7tsEfPY&libraries=places&callback=initMap">
+		</script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+		</script>
 </body>
 
 </html>
