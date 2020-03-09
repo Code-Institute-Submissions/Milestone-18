@@ -2,23 +2,21 @@ body {
    font-family: 'Roboto', sans-serif;
    background-color: #fafafa;
    }
-
-#map {
-   height: 400px;
-   width: 100%;
-}
-
-.map-wrapper {
-   padding-top: 20px;
-   padding-bottom: 20px;
-}
+/*---------------------------------------------Text------*/
 
 h2 {
-   padding-bottom: 20px;
+   padding-top: 50px;
    text-align: center;
+   color: #333;
+   font-family: 'Sen', sans-serif;
+   font-weight: 700;
 }
 
 p {
+   padding: 0 5%;
+}
+
+h6, h4 {
    padding: 0 5%;
 }
 
@@ -31,11 +29,29 @@ a {
    text-decoration: none;
 }
 
+/*-----------------------------------------Map-------*/
+
+#map {
+   height: 400px;
+   width: 100%;
+}
+
+.map-wrapper {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+/*------------------------------------Images----------*/
+
 .hero-image {
    background-image: url(../hero-image.jpg);
-   height: 450px;
+   height: 500px;
    width: 100%;
    background-repeat: none;
    background-position: center;
    background-size: cover;
+}
+
+.hero-wrapper {
+   padding-bottom: 25px;
 }
