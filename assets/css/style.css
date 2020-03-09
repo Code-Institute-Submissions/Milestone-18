@@ -1,15 +1,17 @@
 body {
    font-family: 'Roboto', sans-serif;
    background-color: #fafafa;
+   padding: 0;
    }
 /*---------------------------------------------Text------*/
 
-h2 {
+h1 {
    padding-top: 150px;
    text-align: center;
    color: #333;
    font-family: 'Sen', sans-serif;
    font-weight: 700;
+   font-size: 3em;
 }
 
 p {
@@ -47,6 +49,24 @@ a {
    background-image: url(../hero-image.jpg);
    height: 500px;
    width: 100%;
+   background-repeat: none;
+   background-position: center;
+   background-size: cover;
+}
+
+.city-image {
+   background-image: url(../marrakesh.jpg);
+   height: 600px;
+   width: 90%;
+   background-repeat: none;
+   background-position: center;
+   background-size: cover;
+}
+
+.beach-image {
+   background-image: url(../beach.jpg);
+   height: 600px;
+   width: 90%;
    background-repeat: none;
    background-position: center;
    background-size: cover;
