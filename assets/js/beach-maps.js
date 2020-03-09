@@ -1,7 +1,7 @@
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;
-var countryRestrict = { 'country': 'us' };
+var countryRestrict = { 'country': 'es' };
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
@@ -104,11 +104,18 @@ function onPlaceChanged() {
    }
 }
 
-// Search for hotels in the selected city, within the viewport of the map.
+// Search for hotels or restaurants in the selected city, within the viewport of the map.
 function search() {
+   var rates = document.getElementsByName('rate');
+   var inputtype;
+   for (var i = 0; i < rates.length; i++) {
+      if (rates[i].checked) {
+         inputtype = rates[i].value;
+      }
+   }
    var search = {
       bounds: map.getBounds(),
-      types: ['lodging']
+      types: [`${inputtype}`]
    };
 
    places.nearbySearch(search, function (results, status) {
