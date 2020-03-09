@@ -273,15 +273,3 @@ function buildIWContent(place) {
 }
 // Gets the current weather for an inputted location
 
-function getData(cb) {
-   var xhr = new XMLHttpRequest();
-
-   xhr.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat=3&lon=73&APPID=30d97b87215b9e9e7b0c5a065f302d8d");
-   xhr.send();
-
-   xhr.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-         cb(JSON.parse(this.responseText));
-      }
-   };
-};

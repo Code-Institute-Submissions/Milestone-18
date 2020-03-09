@@ -68,7 +68,7 @@ th, td {
 
 .city-image {
    background-image: url(../marrakesh.jpg);
-   height: 600px;
+   height: 650px;
    width: 90%;
    background-repeat: none;
    background-position: center;
@@ -78,7 +78,7 @@ th, td {
 
 .beach-image {
    background-image: url(../beach.jpg);
-   height: 600px;
+   height: 650px;
    width: 90%;
    background-repeat: none;
    background-position: center;
