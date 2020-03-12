@@ -44,7 +44,7 @@ th, td {
    padding-bottom: 20px;
 }
 
-h4 {
+h4, h2 {
    padding-top: 20px;
    padding-bottom: 10px;
 }
@@ -57,6 +57,17 @@ h6 {
    font-size: 0.5rem;
 }
 
+.beach-bg h3 {
+   text-align: center;
+   position: relative;
+   top: 25px;
+}
+
+.city-bg h3 {
+   text-align: center;
+   position: relative;
+   top: 25px;
+}
 
 /*-----------------------------------------Map-------*/
 
@@ -107,4 +118,26 @@ h6 {
 
 .hero-wrapper {
    padding-bottom: 25px;
+}
+
+.beach-bg {
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../beach.jpg');
+   height: 300px;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   color: #fafafa;
+}
+
+.city-bg {
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../marrakesh.jpg');
+   height: 300px;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   color: #fafafa;
+}
+
+.pageBreakWrapper {
+   padding-bottom: 20px;
 }

@@ -34,43 +34,13 @@ const getData = () => {
             conditions = data.weather[0].main;
             temperature = data.main.temp - 273.15;
             temperature = Math.round(temperature);
-            document.getElementById(weatherCountries[country].name).innerHTML = `<h5>Current Weather</h5>
+            document.getElementById(weatherCountries[country].name).innerHTML = `<h5>Current Weather:</h5>
                <table>
                   <tr><th>Conditions:</th><th>Temperature:</th></tr>
-                  <tr class="lowerTableRow"><td>${conditions}</td><td>${temperature}</td></tr>
+                  <tr class="lowerTableRow"><td>${conditions}</td><td>${temperature} Celcius</td></tr>
                </table>`;
          })
    }
 }
 
 getData()
-
-// const getData = () => {
-//    const xhr = new XMLHttpRequest();
-//    for (const country in weatherCountries) {
-
-//       console.log(country);
-//       const url = `${baseUrl}?lat=${weatherCountries[country].lat}&lon=${weatherCountries[country].long}&APPID=${appId}`;
-//       console.log(url);
-//       xhr.open("GET", url);
-//       xhr.send();
-
-//       xhr.onreadystatechange = function () {
-//          if (this.readyState == 4 && this.status == 200) {
-//             const response = JSON.parse(this.responseText);
-//             console.log(response);
-//             conditions = response.weather[0].main;
-//             temperature = response.main.temp - 273.15;
-//             temperature = Math.round(temperature);
-//             document.getElementById(country).innerHTML = `<h5>Current Weather</h5>
-//                <table>
-//                   <tr><th>Conditions:</th><th>Temperature:</th></tr>
-//                   <tr><td>${conditions}</td><td>${temperature}</td></tr>
-//                </table>`;
-//          }
-//       };
-//    }
-// }
-
-
-// getData()
