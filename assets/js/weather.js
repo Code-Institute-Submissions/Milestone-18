@@ -15,11 +15,13 @@ const weatherCountries = [
       long: 9
    },
    {
-      name: 'marrakech',
+      name: 'marrakesh',
       lat: 31,
       long: 8
    },
 ]
+
+
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
 const appId = "30d97b87215b9e9e7b0c5a065f302d8d";
 
