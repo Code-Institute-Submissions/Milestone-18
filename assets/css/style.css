@@ -4,6 +4,10 @@ body {
    padding: 0;
    }
 
+   .body-padding {
+      padding: 0 2%;
+   }
+
 /*---------------------------------------------Navbar-------*/
 
 .navbar {
@@ -35,6 +39,20 @@ a {
 th, td {
    padding-right: 1rem;
 }
+
+h4 {
+   padding-top: 20px;
+   padding-bottom: 10px;
+}
+
+h6 {
+   font-weight: 700;
+}
+
+.image-info {
+   font-size: 0.5rem;
+}
+
 
 /*-----------------------------------------Map-------*/
 
@@ -74,23 +92,13 @@ th, td {
 }
 
 .city-image {
-   background-image: url(../marrakesh.jpg);
    height: 650px;
-   width: 90%;
-   background-repeat: none;
-   background-position: center;
-   background-size: cover;
-   padding-right: 5%;
+   width: 100%;
 }
 
 .beach-image {
-   background-image: url(../beach.jpg);
-   height: 650px;
-   width: 90%;
-   padding-left: 5%;
-   background-repeat: none;
-   background-position: center;
-   background-size: cover;
+   height: 650px;;
+   width: 100%;
 }
 
 .hero-wrapper {
