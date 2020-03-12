@@ -37,7 +37,7 @@ const getData = () => {
             document.getElementById(weatherCountries[country].name).innerHTML = `<h5>Current Weather</h5>
                <table>
                   <tr><th>Conditions:</th><th>Temperature:</th></tr>
-                  <tr><td>${conditions}</td><td>${temperature}</td></tr>
+                  <tr class="lowerTableRow"><td>${conditions}</td><td>${temperature}</td></tr>
                </table>`;
          })
    }
