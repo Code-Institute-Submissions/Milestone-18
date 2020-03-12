@@ -141,3 +141,15 @@ h6 {
 .pageBreakWrapper {
    padding-bottom: 20px;
 }
+
+/*-----------------------------------Media Queries------*/
+
+@media screen and (min-width: 768px) {
+   .beach-bg {
+      height: 600px;
+   }
+
+   .city-bg {
+      height: 600px;
+   }
+}
