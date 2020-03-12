@@ -33,14 +33,14 @@
 		<div class="row">
 			<div class="col-12 hero-image">
 				<h1>Discover Your Next Holiday Here!</h1>
-				<div class="downArrow"><i class="fas fa-chevron-down"></i></div>
+				<div class="downArrow"><a href="#info-text"><i class="fas fa-chevron-down"></i></a></div>
 			</div>
 		</div>
 	</div>
 
 	<div class="container-fluid body-padding">
 		<div class="row">
-			<div class="col-12 info-text">
+			<div class="col-12 info-text" id="info-text">
 				<p>Welcome to the ideal place to discover all the details about your next holiday. Whether you are
 					looking for
 					a relaxing trip to the beach, or you are after a weekend break to the city, we will be able to help
@@ -57,18 +57,18 @@
 		</div>
 	</div>
 
-<div class="container-fluid pageBreakWrapper">
-   <div class="row">
-      <div class="col-12 beach-bg" id="beachBreaks">
-         <h3>Beach Breaks <i class="fas fa-umbrella-beach"></i></h3>
-      </div>
-   </div>
-</div>
+	<div class="container-fluid pageBreakWrapper">
+		<div class="row">
+			<div class="col-12 beach-bg" id="beachBreaks">
+				<h3>Beach Breaks<i class="fas fa-umbrella-beach"></i></h3>
+			</div>
+		</div>
+	</div>
 
 	<div class="container-fluid body-padding">
 		<div class="row">
-			<div class="col-md-12">
-				<p>A nice relaxing holiday to a beach relies on the consistent weather and the quality
+			<div class="col-md-6">
+				<p id="introText">A nice relaxing holiday to a beach relies on the consistent weather and the quality
 					of the restaurants in the area. So here are a few locations to get you started.</p>
 				<h4>The Maldives</h4>
 				<p>The Maldives is a by-word for luxury, romance and tropical bliss. A beautiful string of low-lying
@@ -77,7 +77,10 @@
 				<p>The country's 26 natural atolls and over 1,000 islands boast uniformly perfect coasts lapped by
 					turquoise lagoons the temperature of bath water. White powdery sand fringes most of the islands,
 					which partly explains why more than a million people come here a year.</p>
-				<div id="maldives" class="tableWrapper"></div>
+				<div class="card">
+					<div class="card-body" id="maldives">
+					</div>
+				</div>
 				<h4>Rhodes</h4>
 				<p>By far the largest and historically the most important of the Dodecanese islands, Rhodes (ro-dos)
 					abounds in beaches, wooded valleys and ancient history. Whether you’re here on a culture-vulture
@@ -89,22 +92,25 @@
 					south, in the picture-perfect town of Lindos, capped by an ancient Acropolis, sugar-cube houses
 					spill down to a turquoise bay. While both Lindos and Rhodes Old Town get very crowded in summer,
 					Rhodes is large enough to allow plenty of room to breathe that pure Aegean air.</p>
-				<div id="rhodes" class="tableWrapper"></div>
+				<div class="card">
+					<div class="card-body" id="rhodes">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-<div class="container-fluid pageBreakWrapper">
-   <div class="row">
-      <div class="col-12 city-bg" id="cityBreaks">
-         <h3>City Breaks <i class="fas fa-city"></i></h3>
-      </div>
-   </div>
-</div>
+	<div class="container-fluid pageBreakWrapper">
+		<div class="row">
+			<div class="col-12 city-bg" id="cityBreaks">
+				<h3>City Breaks <i class="fas fa-city"></i></h3>
+			</div>
+		</div>
+	</div>
 
 	<div class="container-fluid body-padding">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-6">
 				<p>Unwind with a short break to one of these centers of culture. See the sights, eat in the restaurants
 					or spend the evening in the bars; any of these are a fantastic place to see the world.</p>
 				<h4>Lisbon</h4>
@@ -114,7 +120,10 @@
 				<p>As a holiday destination, Lisbon offers a rich and varied history, a buzzing nightlife and is blessed
 					with a glorious year-round climate. This guide will provide an introduction to Lisbon, by answering
 					some of the common holiday questions and providing links to further in-depth information.</p>
-				<div id="lisbon" class="tableWrapper"></div>
+				<div class="card">
+					<div class="card-body" id="lisbon">
+					</div>
+				</div>
 				<h4>Marrakesh</h4>
 				<p>Marrakech is an intoxicating city known for its souks, spices, snake charmers and hidden palaces,
 					though these days it’s prized as much for its trendy art galleries, hip hotels and elegant hammams.
@@ -125,7 +134,10 @@
 					of its bluesy Gnaoua music, calls to prayer and elaborate feasts. Its dark, narrow alleyways are
 					full of artisan workshops, shrines and sprawling markets, and riads. These traditional courtyard
 					guesthouses range from palatial oases to smaller, more intimate affairs.</p>
-				<div id="marrakesh" class="tableWrapper"></div>
+				<div class="card">
+					<div class="card-body" id="marrakesh">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -242,5 +254,6 @@
 				crossorigin="anonymous">
 			</script>
 </body>
-			<script src="assets/js/weather.js"></script>
+<script src="assets/js/weather.js"></script>
+
 </html>
