@@ -3,10 +3,24 @@ body {
    background-color: #fafafa;
    padding: 0;
    }
+
+/*---------------------------------------------Navbar-------*/
+
+.navbar {
+   position: fixed;
+   z-index: 1;
+   width: 100%;
+}
+
+
+/*---------------------------------------------Background---------*/
+
+
 /*---------------------------------------------Text------*/
 
-h1 {
-   padding-top: 150px;
+.hero-image h1 {
+   position: relative;
+   top: 33%;
    text-align: center;
    color: #333;
    font-family: 'Sen', sans-serif;
@@ -14,24 +28,8 @@ h1 {
    font-size: 3em;
 }
 
-p {
-   padding-bottom: 5px;
-}
-
-h6, h4 {
-   padding-bottom: 10px;
-}
-
-h6 {
-   font-weight: 700;
-}
-
 a {
    color: #000;
-}
-
-.info-text {
-   padding: 0 5%;
 }
 
 th, td {
@@ -42,13 +40,12 @@ th, td {
 
 #map {
    height: 400px;
-   width: 100%;
+   width: 80%;
 }
 
 .map-wrapper {
    padding-top: 20px;
    padding-bottom: 20px;
-   padding-left: 6%;
 }
 
 .hotel-search {
@@ -59,11 +56,21 @@ th, td {
 
 .hero-image {
    background-image: url(../hero-image.jpg);
-   height: 600px;
+   height: 100vh;
    width: 100%;
    background-repeat: none;
    background-position: center;
    background-size: cover;
+   position: relative;
+}
+
+.downArrow {
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+   font-size: 2rem;
 }
 
 .city-image {
@@ -80,6 +87,7 @@ th, td {
    background-image: url(../beach.jpg);
    height: 650px;
    width: 90%;
+   padding-left: 5%;
    background-repeat: none;
    background-position: center;
    background-size: cover;

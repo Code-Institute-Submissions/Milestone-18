@@ -11,20 +11,34 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Roboto|Sen:400,700&display=swap');
 	</style>
+	<script src="https://kit.fontawesome.com/37d2df84f6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Stevens Travel</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link" href="#beachBreaks">Beach Breaks </a>
+				<a class="nav-item nav-link" href="#cityBreaks">City Breaks</a>
+				<a class="nav-item nav-link" href="#searchMap">Map</a>
+			</div>
+		</div>
+	</nav>
 	<div class="container-fluid hero-wrapper">
 		<div class="row">
 			<div class="col-12 hero-image">
-				<h1>Discover Your Holiday Here</h1>
+				<h1>Discover Your Next Holiday Here</h1>
+				<div class="downArrow"><i class="fas fa-chevron-down"></i></div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-12 info-text">
 				<p>Welcome to the ideal place to discover all the details about your next holiday. Whether you are
@@ -37,8 +51,8 @@
 					to ignore all of
 					these though.
 				</p>
-            <p>To make use of the map at the bottom please select one of the options for what you would like 
-            to search for. Currently you can search for hotels, restaurants or tourist attractions.</p>
+				<p>To make use of the map at the bottom please select one of the options for what you would like
+					to search for. Currently you can search for hotels, restaurants or tourist attractions.</p>
 			</div>
 		</div>
 	</div>
@@ -47,7 +61,7 @@
 		<div class="row">
 			<div class="col-md-6 d-none d-sm-block beach-image"></div>
 			<div class="col-md-6">
-				<h4>Beach Breaks</h4>
+				<h4 id="beachBreaks">Beach Breaks</h4>
 				<p>A nice relaxing holiday to a beach relies on the consistent weather and the quality
 					of the restaurants in the area. So here are a few locations to get you started.</p>
 				<h6>The Maldives</h6>
@@ -57,7 +71,7 @@
 				<p>The country's 26 natural atolls and over 1,000 islands boast uniformly perfect coasts lapped by
 					turquoise lagoons the temperature of bath water. White powdery sand fringes most of the islands,
 					which partly explains why more than a million people come here a year.</p>
-            <div id="maldives"></div>
+				<div id="maldives"></div>
 				<h6>Rhodes</h6>
 				<p>By far the largest and historically the most important of the Dodecanese islands, Rhodes (ro-dos)
 					abounds in beaches, wooded valleys and ancient history. Whether you’re here on a culture-vulture
@@ -69,7 +83,7 @@
 					south, in the picture-perfect town of Lindos, capped by an ancient Acropolis, sugar-cube houses
 					spill down to a turquoise bay. While both Lindos and Rhodes Old Town get very crowded in summer,
 					Rhodes is large enough to allow plenty of room to breathe that pure Aegean air.</p>
-               <div id="rhodes"></div>
+				<div id="rhodes"></div>
 			</div>
 		</div>
 	</div>
@@ -77,9 +91,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<h4>City Breaks</h4>
-            <p>Unwind with a short break to one of these centers of culture. See the sights, eat in the restaurants 
-            or spend the evening in the bars; any of these are a fantastic place to see the world.</p>
+				<h4 id="cityBreaks">City Breaks</h4>
+				<p>Unwind with a short break to one of these centers of culture. See the sights, eat in the restaurants
+					or spend the evening in the bars; any of these are a fantastic place to see the world.</p>
 				<h6>Lisbon</h6>
 				<p>Lisbon is the stunning capital city of Portugal, and is one of the most charismatic and vibrant
 					cities of Europe. It is a city that effortlessly blends traditional heritage, with striking
@@ -87,7 +101,7 @@
 				<p>As a holiday destination, Lisbon offers a rich and varied history, a buzzing nightlife and is blessed
 					with a glorious year-round climate. This guide will provide an introduction to Lisbon, by answering
 					some of the common holiday questions and providing links to further in-depth information.</p>
-               <div id="lisbon"></div>
+				<div id="lisbon"></div>
 				<h6>Marrakesh</h6>
 				<p>Marrakech is an intoxicating city known for its souks, spices, snake charmers and hidden palaces,
 					though these days it’s prized as much for its trendy art galleries, hip hotels and elegant hammams.
@@ -98,7 +112,7 @@
 					of its bluesy Gnaoua music, calls to prayer and elaborate feasts. Its dark, narrow alleyways are
 					full of artisan workshops, shrines and sprawling markets, and riads. These traditional courtyard
 					guesthouses range from palatial oases to smaller, more intimate affairs.</p>
-               <div id="marrakesh"></div>
+				<div id="marrakesh"></div>
 			</div>
 			<div class="col-md-6 d-none d-sm-block city-image"></div>
 		</div>
@@ -107,7 +121,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-         <h4>Map</h4>
+				<h4 id="searchMap">Map</h4>
 				<div class="hotel-search">
 					<div id="findhotels">
 						Find hotels/restaurants in:
@@ -146,7 +160,7 @@
 			</div>
 
 
-			<div class="container-fluid map-wrapper">
+			<div class="container map-wrapper">
 				<div class="row">
 					<div class="col-md-6">
 						<div id="map"></div>
@@ -187,20 +201,20 @@
 					</div>
 				</div>
 			</div>
-<div class="container">
-   <div class="row">
-      <div class="col-12">
-         <h4>Further Informtation</h4>
-         <p>If you would like anymore information about the hotels or destinations 
-         you discovered above. Please follow this <a href="#">link</a> to find out prices 
-         and book any holidays you wish to enjoy.</p>
-      </div>
-   </div>
-</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h4>Further Informtation</h4>
+						<p>If you would like anymore information about the hotels or destinations
+							you discovered above. Please follow this <a href="#">link</a> to find out prices
+							and book any holidays you wish to enjoy.</p>
+					</div>
+				</div>
+			</div>
 
 
 			<script src="assets/js/beach-maps.js"></script>
-         <script src="assets/js/weather.js"></script>
+			<script src="assets/js/weather.js"></script>
 			<script async defer
 				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAar1nvqBvJPWIS3G42xEWdCo7t7tsEfPY&libraries=places&callback=initMap">
 			</script>
