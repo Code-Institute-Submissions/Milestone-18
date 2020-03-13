@@ -17,7 +17,14 @@ body {
 }
 
 
-/*---------------------------------------------Background---------*/
+/*---------------------------------------------Cards---------*/
+
+.card {
+   color: #fafafa;
+   background-color: #60313131;
+   width: 300px;
+   margin-bottom: 50px;
+}
 
 
 /*---------------------------------------------Text------*/
@@ -32,6 +39,14 @@ body {
    font-size: 3em;
 }
 
+.title-name {
+   font-family: 'Dancing Script', cursive;
+}
+
+#site-title {
+   font-size: 5em;
+}
+
 a {
    color: #000;
 }
@@ -44,7 +59,7 @@ th, td {
    padding-bottom: 20px;
 }
 
-h4, h2 {
+h4, h2, h3 {
    padding-top: 20px;
    padding-bottom: 10px;
 }
@@ -57,17 +72,6 @@ h6 {
    font-size: 0.5rem;
 }
 
-.beach-bg h3 {
-   text-align: center;
-   position: relative;
-   top: 25px;
-}
-
-.city-bg h3 {
-   text-align: center;
-   position: relative;
-   top: 25px;
-}
 
 /*-----------------------------------------Map-------*/
 
@@ -122,20 +126,28 @@ h6 {
 
 .beach-bg {
    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../beach.jpg');
-   height: 300px;
-   width: 100%;
-   background-position: center;
+   background-position: fixed;
    background-size: cover;
+   background-repeat: no-repeat;
    color: #fafafa;
+   overflow: scroll;
+}
+
+.beach-bg::-webkit-scrollbar {
+  display: none;
+}
+
+.city-bg::-webkit-scrollbar {
+  display: none;
 }
 
 .city-bg {
    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../marrakesh.jpg');
-   height: 300px;
-   width: 100%;
-   background-position: center;
+   background-position: fixed;
    background-size: cover;
+   background-repeat: no-repeat;
    color: #fafafa;
+   overflow: scroll;
 }
 
 .pageBreakWrapper {
