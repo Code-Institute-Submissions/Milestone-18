@@ -29,6 +29,10 @@ body {
 
 /*---------------------------------------------Text------*/
 
+p {
+   text-align: justify;
+}
+
 .hero-image h1 {
    position: relative;
    top: 33%;
