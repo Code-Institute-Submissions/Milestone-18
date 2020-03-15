@@ -36,6 +36,10 @@ The map is there for the users to be able to search any city/location in the wor
 
 There are then markers on the map, which when clicked give the phone number, Google rating and a link to their website for the result.
 
+#### Mockup
+
+The following mockup was used before development to get an idea of the general structure of the page.
+
 #### Future Features
 
 The main feature that would need to be added to this are further pages hosting the companies store front, for the user to spend money with the company.
