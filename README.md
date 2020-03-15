@@ -40,6 +40,8 @@ There are then markers on the map, which when clicked give the phone number, Goo
 
 The following mockup was used before development to get an idea of the general structure of the page.
 
+![Mockup](https://raw.githubusercontent.com/NickStevens722/Milestone-2/master/assets/StevensTravel.png "Mockup")
+
 #### Future Features
 
 The main feature that would need to be added to this are further pages hosting the companies store front, for the user to spend money with the company.
@@ -72,5 +74,13 @@ The site is hosted on GitHub and can be run from there or locally by pasting the
 
 To view the source code please click on the following GitHub address https://github.com/NickStevens722/Milestone-2
 
-Please Note that this site is currently for educational purposes only
+## Credits
 
+Thanks go to the following sites for the information about the locations:
+
+https://www.worldtravelguide.net/guides/asia/maldives/
+https://www.lonelyplanet.com/greece/dodecanese/rhodes
+https://lisbonlisboaportugal.com/
+https://www.worldtravelguide.net/guides/africa/morocco/marrakech/
+
+Please Note that this site is currently for educational purposes only.
