@@ -271,5 +271,3 @@ function buildIWContent(place) {
       document.getElementById('iw-website-row').style.display = 'none';
    }
 }
-// Gets the current weather for an inputted location
-

@@ -99,7 +99,7 @@ h6 {
    background-image: url(../hero-image.jpg);
    height: 100vh;
    width: 100%;
-   background-repeat: none;
+   background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
    position: relative;
@@ -130,7 +130,7 @@ h6 {
 
 .beach-bg {
    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../beach.jpg');
-   background-position: fixed;
+   background-attachment: fixed;
    background-size: cover;
    background-repeat: no-repeat;
    color: #fafafa;
@@ -147,7 +147,7 @@ h6 {
 
 .city-bg {
    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../marrakesh.jpg');
-   background-position: fixed;
+   background-attachment: fixed;
    background-size: cover;
    background-repeat: no-repeat;
    color: #fafafa;

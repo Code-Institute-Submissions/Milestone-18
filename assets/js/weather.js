@@ -19,7 +19,7 @@ const weatherCountries = [
       lat: 31,
       long: 8
    },
-]
+];
 
 
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
@@ -31,8 +31,8 @@ const getData = () => {
       fetch(`${baseUrl}?lat=${weatherCountries[country].lat}&lon=${weatherCountries[country].long}&APPID=${appId}`)
          .then(res => res.json())
          .then(data => {
-            conditions = data.weather[0].main;
-            temperature = data.main.temp - 273.15;
+            let conditions = data.weather[0].main;
+            let temperature = data.main.temp - 273.15;
             temperature = Math.round(temperature);
             document.getElementById(weatherCountries[country].name).innerHTML = `<h5>Current Weather:</h5>
                <table>
